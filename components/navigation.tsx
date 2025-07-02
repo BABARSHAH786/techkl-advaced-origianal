@@ -12,9 +12,9 @@ export default function Navigation() {
     { href: "/", label: "Home", icon: Home },
     { href: "/blog", label: "Blog", icon: BookOpen },
     { href: "/news", label: "News", icon: Newspaper },
-    { href: "/about", label: "About", icon: Info },
+    // { href: "/about", label: "About", icon: Info },
     { href: "/contact", label: "Contact", icon: Phone },
-    { href: "/admin", label: "Admin", icon: Settings },
+    // { href: "/admin", label: "Admin", icon: Settings },
   ]
 
   return (

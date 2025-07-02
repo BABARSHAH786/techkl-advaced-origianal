@@ -28,6 +28,7 @@ export default function PrivacyPage() {
               <h2 className="text-2xl font-bold text-gray-900 mb-4">2. How We Use Your Information</h2>
               <p className="text-gray-700 mb-4">We use the information we collect to:</p>
               <ul className="list-disc pl-6 text-gray-700 space-y-2">
+                <li>We display news from external sources</li>
                 <li>Provide, maintain, and improve our services</li>
                 <li>Send you technical notices and support messages</li>
                 <li>Respond to your comments and questions</li>
