@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://techkl.de/sitemap.xml
+
+# Disallow admin areas
+Disallow: /admin/
+
+# Allow all other pages
+Allow: /blog/
+Allow: /news/
+Allow: /about/
+Allow: /contact/
+Allow: /privacy/
+Allow: /terms/
+Allow: /sitemap/
