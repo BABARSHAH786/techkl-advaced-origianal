@@ -11,11 +11,25 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
       - name: Install dependencies
         run: pnpm install
 
       - name: Build project
         run: pnpm run build
+
+      - name: Export static site
+        run: pnpm run export
+
+      - name: List out/ folder contents (debugging)
+        run: ls -la ./out
 
       - name: Upload files via FTP
         uses: SamKirkland/FTP-Deploy-Action@v4.3.4
