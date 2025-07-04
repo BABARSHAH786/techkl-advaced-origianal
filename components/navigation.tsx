@@ -11,7 +11,7 @@ export default function Navigation() {
   const navItems = [
     { href: "/", label: "Home", icon: Home },
     { href: "/blog", label: "Blog", icon: BookOpen },
-    { href: "/news", label: "News", icon: Newspaper },
+    { href: "/news", label: "News Paper", icon: Newspaper },
     // { href: "/about", label: "About", icon: Info },
     { href: "/contact", label: "Contact", icon: Phone },
     // { href: "/admin", label: "Admin", icon: Settings },
