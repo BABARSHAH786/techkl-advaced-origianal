@@ -13,7 +13,7 @@ export default function Navigation() {
     { href: "/blog", label: "Blog", icon: BookOpen },
     { href: "/news", label: "News Paper", icon: Newspaper },
     { href: "/update", label: "Update", icon: Newspaper },
-    { href: "/about", label: "About", icon: Info },
+    // { href: "/about", label: "About", icon: Info },
     { href: "/contact", label: "Contact", icon: Phone },
     // { href: "/admin", label: "Admin", icon: Settings },
   ]
@@ -26,7 +26,7 @@ export default function Navigation() {
           <Link href="/" className="flex items-center space-x-2">
             <div className="text-2xl font-bold text-blue-600">TechKL</div>
           </Link>
-
+{/* check work */}
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
             {navItems.map((item) => {
