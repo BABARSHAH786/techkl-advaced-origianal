@@ -13,6 +13,7 @@ export const metadata: Metadata = {
     default: "TechKL - Technology Knowledge & Learning",
     template: "%s | TechKL",
   },
+  
   description: "Your premier destination for technology insights, learning resources, and industry news.",
   keywords: ["technology", "learning", "programming", "tutorials", "tech news"],
   authors: [{ name: "TechKL Team" }],
@@ -23,7 +24,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: "/favicon-kl.png",
   },
   verification: {
     google: "your-google-verification-code",
@@ -39,9 +40,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="canonical" href="https://techkl.de" />
-        <meta name="google-adsense-account" content="ca-pub-your-adsense-id" />
+        <script src="https://fpyf8.com/88/tag.min.js" data-zone="155769" async data-cfasync="false"></script>
       </head>
+      {/* monetag script */}
+      
       <body className={inter.className}>
         <Navigation />
         <main>{children}</main>
