@@ -1,104 +1,77 @@
-import Link from "next/link"
-import { Facebook, Twitter, Linkedin, Github, Mail } from "lucide-react"
+import Link from "next/link";
+import { Facebook, Twitter, Linkedin, Github, Mail, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 py-12">
-        <div className="grid md:grid-cols-4 gap-8">
+    <footer className="bg-gray-900 text-white text-sm">
+      <div className="max-w-7xl mx-auto px-4 py-8">
+        <div className="grid md:grid-cols-4 gap-6">
           {/* Brand */}
-          <div className="col-span-1">
-            <h3 className="text-2xl font-bold text-blue-400 mb-4">TechKL</h3>
-            <p className="text-gray-300 mb-4">
-              Your premier destination for technology knowledge and learning resources.
+          <div>
+            <h3 className="text-xl font-bold text-blue-400 mb-2">TechKL</h3>
+            <p className="text-gray-400 mb-3 leading-relaxed">
+              Your source for technology knowledge and learning.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Facebook className="h-5 w-5" />
+            <div className="flex space-x-3">
+              <a href="https://www.youtube.com/@knowledgelearning9352" className="text-gray-400 hover:text-blue-400">
+                <Youtube className="w-4 h-4" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Twitter className="h-5 w-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400">
+                <Facebook className="w-4 h-4" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Linkedin className="h-5 w-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400">
+                <Twitter className="w-4 h-4" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
-                <Github className="h-5 w-5" />
+              <a href="#" className="text-gray-400 hover:text-blue-400">
+                <Linkedin className="w-4 h-4" />
+              </a>
+              <a href="#" className="text-gray-400 hover:text-blue-400">
+                <Github className="w-4 h-4" />
               </a>
             </div>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/blog" className="text-gray-300 hover:text-white transition-colors">
-                  Blog
-                </Link>
-              </li>
-              <li>
-                <Link href="/news" className="text-gray-300 hover:text-white transition-colors">
-                  News
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
-                  About
-                </Link>
-              </li>
+            <h4 className="text-base font-semibold mb-2">Quick Links</h4>
+            <ul className="space-y-1">
+              <li><Link href="/" className="text-gray-400 hover:text-white">Home</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-white">Blog</Link></li>
+              <li><Link href="/news" className="text-gray-400 hover:text-white">News</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-white">About</Link></li>
             </ul>
           </div>
 
           {/* Resources */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Resources</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </li>
-              <li>
-                <Link href="/privacy" className="text-gray-300 hover:text-white transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/terms" className="text-gray-300 hover:text-white transition-colors">
-                  Terms & Conditions
-                </Link>
-              </li>
-              <li>
-                <Link href="/sitemap" className="text-gray-300 hover:text-white transition-colors">
-                  Sitemap
-                </Link>
-              </li>
+            <h4 className="text-base font-semibold mb-2">Resources</h4>
+            <ul className="space-y-1">
+              <li><Link href="/contact" className="text-gray-400 hover:text-white">Contact</Link></li>
+              <li><Link href="/privacy" className="text-gray-400 hover:text-white">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-gray-400 hover:text-white">Terms & Conditions</Link></li>
+              <li><Link href="/sitemap" className="text-gray-400 hover:text-white">Sitemap</Link></li>
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact</h4>
-            <div className="space-y-2">
+            <h4 className="text-base font-semibold mb-2">Contact</h4>
+            <div className="space-y-1">
               <div className="flex items-center space-x-2">
-                <Mail className="h-4 w-4" />
-                <span className="text-gray-300">info@techkl.de</span>
+                <Mail className="w-4 h-4" />
+                <span className="text-gray-400">info@techkl.de</span>
               </div>
-              <p className="text-gray-300">Get in touch for collaborations, questions, or feedback.</p>
+              <p className="text-gray-400 text-sm">Reach out for inquiries or feedback.</p>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-400">© {new Date().getFullYear()} TechKL. All rights reserved.</p>
+        <div className="border-t border-gray-800 mt-2 pt-2 text-center">
+          <p className="text-gray-500 text-xs">
+            © {new Date().getFullYear()} TechKL. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>
-  )
+  );
 }

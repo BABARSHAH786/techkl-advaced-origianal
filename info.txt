@@ -1,0 +1,2 @@
+use gemini api key 
+npm install @google/generative-ai

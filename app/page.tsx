@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import ClientHomePage from "./ClientHomePage"
+import NewsFetch from "@/components/newsFetch"
 
 export const metadata: Metadata = {
   title: "TechKL - Technology Knowledge & Learning Platform",
@@ -33,5 +34,11 @@ export const metadata: Metadata = {
 }
 
 export default function HomePage() {
-  return <ClientHomePage />
+  return (
+    <>
+ 
+  <NewsFetch />
+   <ClientHomePage />
+  </>
+  )
 }

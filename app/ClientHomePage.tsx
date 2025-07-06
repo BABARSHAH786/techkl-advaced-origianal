@@ -4,7 +4,7 @@ import Link from "next/link"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { BookOpen, Newspaper, Settings, Globe, Zap, ArrowRight, TrendingUp } from "lucide-react"
-import HomeNewsSection from "@/components/home-news-section"
+// import HomeNewsSection from "@/components/home-news-section"
 
 export default function ClientHomePage() {
   return (
@@ -139,10 +139,10 @@ export default function ClientHomePage() {
         </section>
 
         {/* Latest News Section */}
-        <HomeNewsSection />
+        {/* <HomeNewsSection /> */}
 
         {/* Main Navigation Cards */}
-        <section className="relative z-10 py-16 px-4">
+        {/* <section className="relative z-10 py-16 px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-center text-gray-900 mb-12">Explore TechKL</h2>
 
@@ -195,7 +195,7 @@ export default function ClientHomePage() {
               ))}
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* CTA Section */}
         <section className="relative z-10 py-20 px-4">
